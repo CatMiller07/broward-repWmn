@@ -1,0 +1,95 @@
+
+.container{
+	max-width: 960px;
+}
+#repub-women{
+	align:left;
+	width: 300px;
+    height: auto;
+    margin-left: 200px;
+}
+#club-name{
+	display:inline;
+	position:relative;
+	bottom: 10px;
+}
+.club-heading{
+    border: 2px solid red;
+    border-radius: 58px;
+    width: 960px;
+    margin-left: 150px;
+    background-color: 
+}
+#info-links ul li{
+	display: inline;	
+	 
+	margin-top:  155px;
+	 
+}
+.club-info{
+   padding-left: 625px; 
+}
+#info-links li a{
+  color:red;
+	font-weight: bold;  
+}
+
+h3{
+    text-align: center;
+}
+#pict01{
+	position:relative;
+	top: 34px;
+	border: 3px ;
+	border-radius: 75px;
+	margin-left: 75px;
+}
+#fb-icon{
+    width=44px;
+    height=144px;
+    float:right;
+    margin-right: 70px; 
+    margin-top: 70px;
+}
+
+.club-statement{
+    border: 2px solid red;
+    border-radius: 58px;
+    width: 960px;
+    margin-left: 150px; 
+}
+#club-verbiage{
+	font-family: 'Merriweather', serif;
+	font-weight: 550;
+	line-height: 150%;
+	margin-right: 25px;
+
+}
+.club-statement{
+	border: 3px solid black;
+	border-style:groove;
+	background-color: cornsilk;
+}
+.twitter-timeline{
+    position:relative;
+    top: 27px;
+    float:right;
+  margin-right: 15px;
+}
+.contact-modal{
+     position: absolute;
+      width: 650px;
+      height: 280px;
+   border: 2px solid red;
+border-radius: 15%;        
+   padding: 55px 52px; 
+    background-color: cornsilk;
+    z-index: 4;
+}
+.form-group{
+    padding: 1px;
+}
+#gmap-canvas{
+    padding-top: 27px;
+   border: 2px solid black;
+}
