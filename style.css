@@ -1,5 +1,49 @@
-body { padding-top: 70px; }
+body { 
+     
+       background-image: url(Red-watercolor-background-free-seamless-texture.jpg);
+     
+}
 
+
+#club-logo{
+  height : 75px;
+  padding-bottom: 12px; 
+}
+.navbar-header{
+    height: 92px;
+}
+h1{
+
+    color: black;
+    font-weight: 600;
+}
+
+h4{
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+#info-links li{ 
+    position:relative;
+    display: inline;
+  overflow:auto;
+    float: right;
+    padding-top: 12px;
+   padding-bottom: 12px;
+}
+ #about-link, #contact-link{
+  
+     color: red;
+    font-weight: 600;
+}
+#about-link{
+  overflow:auto;
+     
+}
 #repub-women{
 	align:left;
 	width: 300px;
@@ -18,12 +62,7 @@ body { padding-top: 70px; }
     margin-left: 30px;
     background-color: 
 }
-#info-links ul li{
-	display: inline;	
-	 
-	margin-top:  155px;
-	 
-}
+
 .club-info{
    padding-left: 625px; 
 }
@@ -32,17 +71,21 @@ body { padding-top: 70px; }
 	font-weight: bold;  
 }
 
-h3{
+h3.club-statement{
     text-align: center;
+}
+
+.imgframe{
+    background:#fff8dc,
+    padding: 12px;
+    border: 10px solid #999999;
 }
 
 #pict01{
 	position:relative;
 	top: 34px;
-	border-image: url(picture-frame1.jpg);
-    
 	margin-left: 75px;
-    margin-bottom: 42px;
+    margin-bottom: 72px;
 }
 
 
@@ -58,7 +101,7 @@ h3{
 #club-verbiage, h3{
 	font-family: 'Merriweather', serif;
 	font-weight: 550;
-	line-height: 150%;
+	line-height: 170%;
 	
 
 }
@@ -67,14 +110,16 @@ h3{
     position:relative;
     top: 27px;
     float:right;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 .contact-modal{
-     position: absolute;
+     position: relative;
+    
+     float:right;
       width: 650px;
       height: 280px;
    border: 2px solid red;
-border-radius: 15%;        
+border-radius: 5px;        
    padding: 55px 52px; 
     background-color: cornsilk;
     z-index: 4;
@@ -82,10 +127,16 @@ border-radius: 15%;
 .form-group{
     padding: 1px;
 }
-#google-map{
-    float:right;
+
+.meetingplace-map{
+    position:relative;
+    float:right ;
+    margin-left: 400px;
+    margin-top: 34px;
+    margin-right: 15px;
+     margin-bottom: 48px;
 }
 #gmap-canvas{
     padding-top: 27px;
-   border: 2px solid black;
+   border: 5px solid black;
 }
