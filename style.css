@@ -1,16 +1,30 @@
-body { 
-     
-       background-image: url(Red-watercolor-background-free-seamless-texture.jpg);
-     
-}
+
 
 
 #club-logo{
-  height : 75px;
-  padding-bottom: 12px; 
+  height : 108px;
+
+  margin-bottom: 3px; 
 }
-.navbar-header{
-    height: 92px;
+.socialmedia{
+    border-bottom:  2px solid red;
+}
+
+.nav-bar{
+    height: 180px;
+     
+    background-image:url("Faded%20Amer%20Flag.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#fb-logo{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 80px;
+    padding-bottom: 8px;
 }
 h1{
 
@@ -34,6 +48,7 @@ h2{
     float: right;
     padding-top: 12px;
    padding-bottom: 12px;
+   margin-right: 60px;    
 }
  #about-link, #contact-link{
   
@@ -106,37 +121,34 @@ h3.club-statement{
 
 }
 
-.twitter-timeline{
-    position:relative;
-    top: 27px;
-    float:right;
-  margin-left: 15px;
-}
-.contact-modal{
-     position: relative;
+#twitter-feed{
     
-     float:right;
-      width: 650px;
-      height: 280px;
-   border: 2px solid red;
-border-radius: 5px;        
-   padding: 55px 52px; 
-    background-color: cornsilk;
-    z-index: 4;
+    margin-top: 401px;
+    float:right;
+   
 }
+
 .form-group{
     padding: 1px;
 }
 
-.meetingplace-map{
-    position:relative;
+#meeting-place{
+   
     float:right ;
-    margin-left: 400px;
+   
     margin-top: 34px;
     margin-right: 15px;
      margin-bottom: 48px;
+    margin-left: 800px; 
 }
 #gmap-canvas{
     padding-top: 27px;
    border: 5px solid black;
+}
+#contact-modal{
+    width: 600px;
+    height: 550px;
+}
+#contact-dismiss{
+    padding-left: 60px;
 }

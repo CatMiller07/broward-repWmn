@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
         
@@ -14,26 +15,35 @@
 	</head>
 
 	<body>
-      <nav class="navbar navbar-inverse">
+         
+      <div class="nav-bar">
           <div class="container-fluid">
-              <div class="row">
+            <div class="row socialmedia">
+               <div class="facebk-link">  
+                   <a  href="https://www.facebook.com/groups/BrowardRepublicanWomen/">
+                     <img id="fb-logo" alt="Broward Rep Women FB page" src="facebook%20button.png">
+                   </a>   
+               </div>  
+                   
+            </div> 
+              <div  class="club-logo-row row">
                 <div class="navbar-header">
                   <a class="navbar-brand" href="#">
                     <img id="club-logo" alt="Broward Rep Women" src="fl-federation-republican-women-logo-smaller.jpg">
                   </a>
               </div>              
-
-                <ul id="info-links">
+                
+                <ul id="info-links"> 
                    <li><p class="navbar-text"><a id="about-link" href="#" class="navbar-link">About</a></p></li>  
-                   <li> <p class="navbar-text"><a id="contact-link" href="#" class="navbar-link">Contact</a></p></li>
+                   <li> <p class="navbar-text"><a data-toggle="modal" data-target="#contact-modal"  href="#" class="navbar-link">Contact</a></p></li>
                 </ul>  
                        
               </div>                   
           </div>
-      </nav>
+      </div>
             
 	  <div class="container-fluid">	
-      
+          
           <div class="row">             
                   <h1><center>Broward Women's Republican Club, Federated</center</h1>                      
           </div>   
@@ -43,8 +53,11 @@
            <img id="pict01" class="profilePic img imgframe" alt="Celeste Shank Ellich" src="https://scontent-mia1-1.xx.fbcdn.net/hprofile-xap1/v/t1.0-1/c40.0.160.160/p160x160/45817_402462722608_45455_n.jpg?oh=acac4195865822b4ce49419defd086c8&amp;oe=57213666">
           </div>
           <div class="col-xs-6 col-md-6">    
-       <h4>Directions to monthly meeting<h4>       
+        
+       <div id="meeting-place">  
+       <h4>Directions to monthly meeting<h4>        
        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:253px;width:394px;'><div id='gmap_canvas' style='height:265px;width:394px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-website.com/'>google maps on hp</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=4349024b7e99796177bfe38141afa5fbb244ea2d'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(26.2382371,-80.1427433),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(26.2382371,-80.1427433)});infowindow = new google.maps.InfoWindow({content:'<strong>Maguire Hill 16</strong><br>535 North Andrews Ave<br>33301 Fort Lauderdale<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+           </div>       
        </div>   
         </div>
       <div class="row club-statement">    
@@ -57,14 +70,20 @@ Sed eget suscipit nisl. Sed non vestibulum ligula, sit amet lobortis elit. Lorem
       </div>
   
         <div id="twitter-feed">
-         <a class="twitter-timeline" data-width="320" data-height="350"  data-tweet-limit="70"
+         <a class="twitter-timeline" data-width="520" data-height="350"  data-tweet-limit="3"
             data-aria-polite="assertive"
         href="https://twitter.com/hashtag/LeadRight2016" data-widget-id="678639009241821184">#LeadRight2016 Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div> 
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))      {js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div> 
      
+          
+      </div>	<!-- container-fluid-->
            
-      <div class="contact-modal">
+      <div id= "contact-modal" class="modal fade" role="dialog">
+        <div class="modal-content">  
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>    
             <form class="form-horizontal">
              <div class="form-group">
                  <label for="inputName" class="col-sm-2 control-label">Name</label>
@@ -84,10 +103,11 @@ Sed eget suscipit nisl. Sed non vestibulum ligula, sit amet lobortis elit. Lorem
                    <input type="phone" class="form-control" id="inputPhone" placeholder="phone number">
                  </div>  
             </div>  
-                <button id="form-sbm" class="btn btn-md btn-primary">Submit</button>    
+                <button id="form-sbm" class="btn btn-md btn-primary">Submit</button>   
+               
             </form>  
+            </div>
         </div>        
-      </div>	  
          <!-- Compiled and minified JavaScript -->
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
