@@ -91,9 +91,10 @@ h3.club-statement{
 }
 
 .imgframe{
+	margin-left: 15px;
     background:#fff8dc,
     padding: 12px;
-    border: 10px solid #999999;
+    border: 10px solid #858ba0;
 }
 
 
@@ -106,7 +107,7 @@ aside h5{
     margin-left: 38px;
 }
 section article{
-    width: 85%;
+    width: 80%;
     float:right;
     -webkit-column-count: 2;
     -webkit-column-gap: em;
@@ -150,4 +151,10 @@ section article{
 }
 #contact-dismiss{
     padding-left: 60px;
+}
+#form-sbm{
+    position: relative;
+	margin-left: 187px;
+	margin-bottom: 18px;
+	
 }
