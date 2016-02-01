@@ -19,6 +19,10 @@
    
 }
 
+#header-title{
+    position: relative;
+    margin-top: 50px;
+}
 #fb-logo{
     height: 30px;
     width: 30px;
@@ -157,4 +161,14 @@ section article{
 	margin-left: 187px;
 	margin-bottom: 18px;
 	
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+#myCarousel{
+    position: relative;
+    margin-top: 180px;
 }
