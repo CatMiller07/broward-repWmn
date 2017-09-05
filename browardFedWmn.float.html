@@ -11,16 +11,104 @@
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	<link type="text/css" rel="stylesheet" href="repWmn.css"/>
+	<!--  --------------------jQuery------------------ -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<!--  Style ------------------------------------- -->
+    <link type="text/css" rel="stylesheet" href="css/carouselStyle.css"/>
+	<link type="text/css" rel="stylesheet" href="css/floatStyle.css"/>
+	
   </head>
+  
   <body>
-   <div id="header">
-    <img id="club-logo" alt="Broward Rep Women" src="florida-republican-women-logo.png">
+   <div id="header">  
+      <img class="picture" id="logo" alt="Broward Rep Women" src="florida-republican-women-logo.png">
+	  <h1>Broward Republican Women's Club, Federated </h1>
    </div>
-   <aside id="left"></aside>
-   <div id="right">
    
+   <aside id="left">
+      <figure id="clubPres">
+         <img id="presImg" class="picture" alt="Rep Women club pres" src="celeste.ellich.jpg">
+  	   <figcaption> Celeste Ellich </figcaption>
+	  </figure>   
+	  <p id="presWords">
+	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id massa sed arcu porttitor ullamcorper. Fusce id leo urna. Sed elit ante, pretium at velit sed, accumsan facilisis nulla. Integer in dui pulvinar, hendrerit elit vitae, malesuada sapien.
+		In imperdiet porta turpis. Donec varius tempus ante non tristique. Nunc ac lacus consectetur, varius ex at, tincidunt ante.
+	    Nulla nec accumsan risus, id ullamcorper nunc. Quisque et sapien eget felis gravida egestas id at enim. Etiam risus nulla, eleifend eu magna non, venenatis sagittis ante.
+	    Aliquam dapibus risus sed ante egestas auctor. Ut euismod gravida nisl, et pulvinar risus sagittis nec.
+        <br>
+        Aliquam eget lacus justo. Curabitur semper est id metus consectetur condimentum. Vestibulum consequat id purus sed convallis.
+	    Donec magna nisi, rutrum at mauris nec, hendrerit imperdiet quam. Fusce at nunc a dolor sollicitudin pretium. Mauris eget ex quis lacus gravida efficitur. 
+		Vestibulum at odio quis est venenatis convallis et sit amet enim. Praesent dignissim lacus at libero pharetra dictum. 
+		Integer pretium sed orci a tempor.
+      </p>
+   </aside>
+   
+   <div id="right">
+      <div class="clearout"></div>
+      
+          <ul id="flexiselDemo2">
+            <li><img src="images/043.jpg" alt="MLK Day Parade" /></li>
+            <li><img src="images/elephants.png" alt="Elephant" /></li>
+            <li><img src="images/125.jpg" alt="Rep women meeting" /></li>
+            <li><img src="images/penguins.png" alt="Penguins" /></li>
+          </ul>
+          <h4> Recent Events </h4>
    </div>
-   <div id="footer"></div>
+   <div id="footer">
+      <p> The End </p>
+	</div>  
+	<!--   js routines  -->
+        <script type="text/javascript">	
+		
+		$(window).load(function() {
+		  $("#flexiselDemo1").flexisel();
+		  
+         $("#flexiselDemo2").flexisel({
+        visibleItems: 3,
+        itemsToScroll: 2,
+        animationSpeed: 200,
+        infinite: true,
+        navigationTargetSelector: null,
+        autoPlay: {
+            enable: false,
+            interval: 5000,
+            pauseOnHover: true
+        },
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1,
+                itemsToScroll: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2,
+                itemsToScroll: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3,
+                itemsToScroll: 3
+            }
+        },
+        loaded: function(object) {
+            console.log('Slider loaded...');
+        },
+        before: function(object){
+            console.log('Before transition...');
+        },
+        after: function(object) {
+            console.log('After transition...');
+        },
+        resize: function(object){
+            console.log('After resize...');
+        }
+    });
+    	   
+		   
+		   });
+	
+	</script>
   </body>
 </html>
