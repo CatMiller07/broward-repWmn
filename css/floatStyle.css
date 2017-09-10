@@ -4,8 +4,7 @@
 body {  }
 #header {
     height: 100px;
-    background-image: url("FadedAmerFlag.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/FadedAmerFlag.jpg") no-repeat;
     background-size: cover;
     border-bottom: 2px gray groove;
    
