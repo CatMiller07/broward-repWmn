@@ -72,5 +72,17 @@ h4{
    clear:both;
    width: 100%;
    text-align: center;
-   border: 1.5px blue solid;
+   /*border: 1.5px blue solid; */
+   background-color: black;
+    color:white;
  }  
+
+h5{
+    margin-left: 27px;
+}
+
+#FB {
+    width: 35px;
+    height: 35px;
+
+}
